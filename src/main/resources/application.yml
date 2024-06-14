@@ -1,0 +1,25 @@
+server:
+  port: 8083
+
+api:
+  json-place-holder:
+    domain: 'query1.finance.yahoo.com'
+    endpoints: 
+      stocks: 'v7/finance/quote?symbols=0388.HK&crumb=0LRtuCtkgx.'
+
+database: 
+  db-name: "db_2403" #跟名
+
+spring:
+  datasource: #BEANS->CONTEXT
+    driverClassName: "org.postgresql.Driver"
+    url: "jdbc:postgresql://localhost:5432/${database.db-name}"
+    username: "postgres"
+    password: "admin1234"
+
+spring.jpa:
+  show-sql: true
+  hibernate.ddl-auto: update # update先
+  # Hibernate ddl auto (create, create-drop, validate, update)
+  #validate stop
+  #update
