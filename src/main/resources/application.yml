@@ -1,12 +1,6 @@
 server:
   port: 8083
 
-api:
-  json-place-holder:
-    domain: 'query1.finance.yahoo.com'
-    endpoints: 
-      stocks: 'v7/finance/quote?symbols=0388.HK&crumb=0LRtuCtkgx.'
-
 database: 
   db-name: "db_2403" #跟名
 
